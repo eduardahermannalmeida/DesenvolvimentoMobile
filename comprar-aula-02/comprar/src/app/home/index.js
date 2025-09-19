@@ -26,13 +26,23 @@ export function Home() {
 		status: FilterStatus.PENDING,
 	}
 
-	await itemStorage.add(newItem)
+	await itemsStorage.add(newItem)
 	await itemByStatus()
 
 	Alert.alert('Adicionado', 'Adicionado ${description}')
 	setFilter(FilterByStatus.PENDING)
 	setDescription('')
 
+}
+
+async function itemByStatus() {
+	try{
+		const response = await itemsStorage.getByStatus(filter)
+		setItems(response)
+	} catch(error) {
+		console.log(error)
+		Alert.alert('Erro', 'Não foi possível filtrar os itens.')
+	}
 }
 
 	return (
@@ -56,7 +66,7 @@ export function Home() {
 
 					<FlatList
 					data={items}
-					keyExtractor={item => item.id}
+					keyExtractor={(item) => item.id}
 					renderItem={({item}) => (
 						<Item data={item}/>
 					)}
