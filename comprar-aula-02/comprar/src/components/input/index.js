@@ -5,7 +5,7 @@ export function Input(props) {
 	return (
 		<TextInput
 			style={styles.container}
-			placeholderTextColor="#74798b"
+			placeholderTextColor='#74798b'
 			{...props}
 		/>
 	)
