@@ -4,6 +4,8 @@ import { Filter } from '../../components/filter'
 import { Input } from '../../components/input'
 import { FilterStatus } from '../../types/filter-status'
 import { styles } from './styles'
+import { FlatList } from 'react-native'
+import { Item } from '../../components/items'
 
 export function Home() {
 	const [filter, setFilter] = useState(FilterStatus.PENDING)
@@ -24,7 +26,19 @@ export function Home() {
 					<TouchableOpacity>
 						<Text> Limpar </Text>
 					</TouchableOpacity>
+
 				</View>
+
+					<FlatList
+					data={items}
+					keyExtractor={item => item.id}
+					renderItem={({item}) => (
+						<Item data={item}/>
+					)}
+					showsVerticalScrollIndicator={false}
+					ListEmptyComponent={() => <Text>Nenhum item aqui.</Text>}
+					/>
+
 			</View>
 		</View>
 	)
