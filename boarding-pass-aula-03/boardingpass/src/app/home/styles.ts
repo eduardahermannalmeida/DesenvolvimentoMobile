@@ -25,7 +25,6 @@ export const styles = StyleSheet.create({
 		fontFamily: fontFamily.medium,
 	},
 	ticket: {
-		flex: 1,
 		width: '100%',
 		backgroundColor: colors.white,
 		borderRadius: 22,
@@ -41,5 +40,41 @@ export const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		marginBottom: 52,
+	},
+	duration: {
+		alignItems: 'center',
+	},
+	hours: {
+		color: colors.gray[800],
+		fontSize: 12,
+		fontFamily: fontFamily.regular,
+	},
+	label: {
+		color: colors.gray[400],
+		fontSize: 12,
+		fontFamily: fontFamily.regular,
+	},
+	name: {
+		color: colors.black,
+		fontSize: 24,
+		fontFamily: fontFamily.bold,
+	},
+	details: {
+		marginTop: 52,
+	},
+	inline: {
+		width: '100%',
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+	},
+	footer: {
+		width: '100%',
+		padding: 20,
+		flexDirection: 'row',
+		gap: 22,
+	},
+	footerContent: {
+		flex: 1,
+		gap: 24,
 	},
 })

@@ -5,15 +5,14 @@ import { fontFamily } from '@/styles/fontFamily'
 export const styles = StyleSheet.create({
 	label: {
 		color: colors.gray[400],
-		fontSize: 12,
+		fontSize: 10,
 		textTransform: 'uppercase',
-		fontFamily: 'fontFamily.regular',
+		fontFamily: fontFamily.regular,
 	},
 	value: {
 		color: colors.black,
-		fontSize: 42,
+		fontSize: 16,
+		fontWeight: '500',
 		fontFamily: fontFamily.bold,
-		textTransform: 'uppercase',
-		marginTop: -10,
 	},
 })
