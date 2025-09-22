@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons'
 import { ImageBackground, Text, View } from 'react-native'
 import { Flight } from '@/components/flight'
 import { styles } from './styles'
@@ -17,6 +18,11 @@ export function Home() {
 				<View style={styles.content}>
 					<View style={styles.flight}></View>
 					<Flight label="São Paulo" value="GRU" />
+
+					<View style={styles.duration}>
+						<Text style={styles.hours}>9 h 45 min</Text>
+					</View>
+
 					<Flight label="Nova York" value="JKF" />
 				</View>
 			</View>

@@ -32,6 +32,14 @@ export const styles = StyleSheet.create({
 		overflow: 'hidden',
 		paddingBottom: 24,
 	},
-	content: {},
-	flight: {},
+	content: {
+		padding: 20,
+	},
+	flight: {
+		width: '100%',
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'space-between',
+		marginBottom: 52,
+	},
 })
