@@ -1,5 +1,5 @@
-import { colors } from '@/styles/colors';
-import { StyleSheet } from 'react-native';
+import { colors } from '@/styles/colors'
+import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
 	container: {
@@ -7,11 +7,11 @@ export const styles = StyleSheet.create({
 		paddingTop: 42,
 	},
 	header: {
-		paddingHorizontal: 24,
 		width: '100%',
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
+		paddingHorizontal: 24,
 		marginBottom: 32,
 	},
 	logo: {
@@ -68,4 +68,4 @@ export const styles = StyleSheet.create({
 		borderTopColor: colors.gray[600],
 		paddingVertical: 14,
 	},
-});
+})
