@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
 		width: '100%',
 	},
 	header: {
-		paddingTop: 76,
+		paddingTop: 32,
 		alignItems: 'center',
 		justifyContent: 'center',
 		paddingBottom: 40,
@@ -33,27 +33,31 @@ export const styles = StyleSheet.create({
 		color: colors.gray[100],
 	},
 	card: {
-		flex: 1,
-		backgroundColor: colors.gray[700],
+		marginHorizontal: 16,
 		padding: 24,
 		flexDirection: 'column',
 		gap: 24,
+		backgroundColor: colors.gray[700],
 		borderWidth: 1,
 		borderColor: colors.gray[600],
 		borderRadius: 16,
-		marginHorizontal: 16,
 	},
 	aboutHeader: {
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
 	},
+	aboutTitle: {
+		fontSize: 20,
+		fontWeight: '600',
+		color: colors.gray[200],
+	},
 	aboutStatus: {
 		flexDirection: 'row',
 		alignItems: 'center',
 		gap: 8,
 	},
-	aboutTitle: {
+	aboutSubTitle: {
 		fontSize: 12,
 		fontWeight: '600',
 		color: colors.purple[300],
