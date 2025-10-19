@@ -15,7 +15,6 @@ export default function Index() {
 			intervalRef.current = setInterval(() => {
 				setTime((prev) => {
 					if (prev <= 0) {
-						// finaliza ciclo
 						if (intervalRef.current) clearInterval(intervalRef.current)
 						setIsRunning(false)
 						setCycles((c) => c + 1)
@@ -42,7 +41,7 @@ export default function Index() {
 
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>Timer Pomodoro</Text>
+			<Text style={styles.title}>POMODORO</Text>
 			<TimerDisplay time={time} />
 			<Controls
 				isRunning={isRunning}
